@@ -1,18 +1,20 @@
 /NetStorXcelerator
 │
-├── /go-service
+├── /service
 │   ├── Dockerfile
-│   ├── main.go
+│   ├── SystemService.go
 │
-├── /rust-driver
-│   ├── Dockerfile
-│   ├── src
-│   │   └── main.rs
-│   └── Cargo.toml
+├── /drivers
+│   ├── /ethernet
+│       ├── Dockerfile
+│       ├── src
+│       │   └── main.rs
+│       └── Cargo.toml
 │
-├── /cpp-app
-│   ├── Dockerfile
-│   ├── main.cpp
-│   └── CMakeLists.txt
+├── /apps
+│   ├── /packxclerator
+│       ├── Dockerfile
+│       ├── main.cpp
+│       └── CMakeLists.txt
 │
 └── docker-compose.yml
